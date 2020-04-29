@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button buttonEnviar;
     EditText senha, email;
-    TextView textView;
+    TextView textView, cadastro;
     Activity activity = this;
 
 
@@ -28,18 +28,28 @@ public class MainActivity extends AppCompatActivity {
         buttonEnviar = findViewById(R.id.enviar);
         senha = findViewById(R.id.senha);
         email = findViewById(R.id.email);
+        cadastro = findViewById(R.id.cadastro);
+
+        cadastro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
         buttonEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String textoNome = senha.getText().toString();
                 String textoEmail = email.getText().toString();
 
+
                 if (textoNome.isEmpty() || textoEmail.isEmpty()) {
                     Toast.makeText(activity, "Por favor preencha todos os campos!", Toast.LENGTH_LONG).show();
                 } else {
                     Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
                     startActivity(intent);
-
                 }
             }
         });
