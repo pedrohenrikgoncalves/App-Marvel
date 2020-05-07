@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".RegisterActivity">
 
     <ImageView
         android:id="@+id/marvelLogin2"
@@ -25,7 +25,7 @@
         app:srcCompat="@drawable/marvel_login" />
 
     <Button
-        android:id="@+id/salvar"
+        android:id="@+id/buttonSalvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
@@ -40,7 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/senha2"
+        android:id="@+id/senha"
         android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
