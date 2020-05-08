@@ -1,4 +1,4 @@
-package com.example.marvel;
+package com.example.marvel.view;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.marvel.R;
 
 import static android.widget.Toast.makeText;
 
